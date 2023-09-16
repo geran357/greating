@@ -1,0 +1,2 @@
+# greating
+tugas logika
