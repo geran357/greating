@@ -1,0 +1,60 @@
+print("Selamat datang di tugas welcome")
+
+nama = input("Masukkan nama Anda: ")
+print("Halo", nama, "selamat datang di pemrograman")
+
+# Delay code
+import time
+
+delay = 3
+
+print("Memasuki program, harap tunggu...")
+time.sleep(delay)
+print("Menjalankan program...")
+
+delay = 2
+
+umur = input("Masukkan umur Anda: ")
+print("Mengambil data...")
+time.sleep(delay)
+
+delay = 3
+print("Silakan masukkan gender Anda")
+gender = input("Pria / Wanita: ")
+time.sleep(delay)
+
+delay = 2
+print("Collecting data...")
+time.sleep(delay)
+
+delay = 2
+print("Collecting data...")
+time.sleep(delay)
+
+delay = 2
+print("Collecting data...")
+time.sleep(delay)
+
+# Pengambilan gender
+if gender.lower() == "pria":
+    jenis_kelamin = "Bapak"
+else:
+    jenis_kelamin = "Ibu"
+
+print(f'Selamat datang {jenis_kelamin} {nama}, umur Anda adalah {umur}')
+
+print("Apakah Anda ingin menambahkan hobi Anda?")
+
+hobi = input("YA/TIDAK?")
+
+if hobi.lower() == "ya":
+    print("Tunggu sebentar...")
+    time.sleep(1)  # Delay 1 detik
+    hobi_anda = input('Masukkan hobi Anda: ')
+    time.sleep(1)  # Delay 1 detik
+    print(f'halo {jenis_kelamin} {nama} dan hobi Anda adalah {hobi_anda}')
+else:
+    print("Program akan keluar")
+    time.sleep(2)  # Delay 2 detik
+    
+
